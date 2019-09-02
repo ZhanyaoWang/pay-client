@@ -1,0 +1,12 @@
+spring:
+  read-dataSource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.18.137.247:3306/pay_juhe?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: 123456
+  dataSource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.18.137.247:3306/pay_juhe?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: 123456
