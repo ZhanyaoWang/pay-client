@@ -1,12 +1,15 @@
-package com.ruijie.pay.model;
+package com.ruijie.pay.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
 @Table(name = "sys_user", schema = "pay_juhe", catalog = "")
-public class SysUserEntity {
+public class SysUserEntity implements Serializable {
+
+
     private int userId;
     private String username;
     private String name;
@@ -174,5 +177,24 @@ public class SysUserEntity {
     @Override
     public int hashCode() {
         return Objects.hash(userId, username, name, password, fundPassword, deptId, email, mobile, status, userIdCreate, gmtCreate, gmtModified, userType);
+    }
+
+    @Override
+    public String toString() {
+        return "SysUserEntity{" +
+                "userId=" + userId +
+                ", username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", fundPassword='" + fundPassword + '\'' +
+                ", deptId=" + deptId +
+                ", email='" + email + '\'' +
+                ", mobile='" + mobile + '\'' +
+                ", status=" + status +
+                ", userIdCreate=" + userIdCreate +
+                ", gmtCreate=" + gmtCreate +
+                ", gmtModified=" + gmtModified +
+                ", userType=" + userType +
+                '}';
     }
 }

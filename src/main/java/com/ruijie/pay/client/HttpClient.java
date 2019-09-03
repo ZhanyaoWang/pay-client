@@ -2,7 +2,7 @@ package com.ruijie.pay.client;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.ruijie.pay.model.Order;
+import com.ruijie.pay.domain.Order;
 import com.ruijie.pay.util.ClientUtil;
 import com.ruijie.pay.util.Md5Util;
 import com.ruijie.pay.util.RequestUtils;

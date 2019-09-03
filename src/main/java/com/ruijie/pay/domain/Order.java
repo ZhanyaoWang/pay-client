@@ -1,4 +1,4 @@
-package com.ruijie.pay.model;
+package com.ruijie.pay.domain;
 
 public class Order {
 
